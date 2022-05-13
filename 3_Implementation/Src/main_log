@@ -1,0 +1,27 @@
+
+main.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	b480      	push	{r7}
+   2:	b083      	sub	sp, #12
+   4:	af00      	add	r7, sp, #0
+   6:	4b08      	ldr	r3, [pc, #32]	; (28 <main+0x28>)
+   8:	607b      	str	r3, [r7, #4]
+   a:	4b08      	ldr	r3, [pc, #32]	; (2c <main+0x2c>)
+   c:	603b      	str	r3, [r7, #0]
+   e:	687b      	ldr	r3, [r7, #4]
+  10:	681b      	ldr	r3, [r3, #0]
+  12:	f443 7280 	orr.w	r2, r3, #256	; 0x100
+  16:	687b      	ldr	r3, [r7, #4]
+  18:	601a      	str	r2, [r3, #0]
+  1a:	683b      	ldr	r3, [r7, #0]
+  1c:	681b      	ldr	r3, [r3, #0]
+  1e:	f443 7280 	orr.w	r2, r3, #256	; 0x100
+  22:	683b      	ldr	r3, [r7, #0]
+  24:	601a      	str	r2, [r3, #0]
+  26:	e7fe      	b.n	26 <main+0x26>
+  28:	40023844 	.word	0x40023844
+  2c:	40012004 	.word	0x40012004
