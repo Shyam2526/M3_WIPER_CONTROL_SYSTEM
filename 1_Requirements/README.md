@@ -1,8 +1,9 @@
 # 1_REQUIREMENTS
 ## Features
-* Easy way of control the Wiper System
-* less complexity
-* user friendly
+* Easy way of control the Wiper System.
+* Power Consumption of Board is less.
+* less complexity.
+* user friendly.
 ## Research
 * Referred projects, based on External Led Blinking using Switches.
 * Research about STM32F4 Discovery Board technical manual, References manual and STM32 Communities.
@@ -14,17 +15,18 @@
 
 ## 4W's and 1-H
 ### WHAT
-* It is the simple way of using car wiper system at STM32F407vg series.
+* Car Wiper is controlled by the wireless Push Button that process will be indicated by LED's.
 ### WHY
-* To clean the car front glass when the water or some other liquid is detected. 
+* To know the Wiper Control System principle and to vary the speeds depends on the user input.
 ### WHO
-* Person who driving in rainy climate or in snow condition.
+* Peoples having the four wheelers can use it.
 ### WHERE
 * This system used in car, lorry, trucks, etc to clean the spread of water in front glass.
 ### How
 * Using STM32F407 Discovery Board, the wiper system controll is done 
 ## SWOT ANALYSIS
 ### STRENGTHS:
+* Automation with no Human interaction
 * User Friendly
 * Platform Independant
 * Safe and Secure
@@ -45,14 +47,14 @@
 
 |  ID   | Description | Status (Implemented/In Future) |
 | ----- | ----------- | ------------------------------ |
-| HLR 1 |     Wiper Control System  |  Implemented  |
-| HLR 2 |    Push Button and Led Toggle   | Implemented |
-| HLR 3 |    Cygwin type Makefile | Implemented |
-| HLR 4 |    Startup Code, Object Code, Linker Script and Executable Code  | Implemented |
+| HLR 1 |     Wiper Control System State  |  Implemented  |
+| HLR 2 |    Push Button pressed 2 second, Iginited RED led   | Implemented |
+| HLR 3 |    Iginiton to start car | Implemented |
+| HLR 4 |    LED Blinking using delay  | Implemented |
 
 ### Low Level Requirements:
 
 |  ID   | Description | Status (Implemented/ In Future) |
 | ----- | ----------- | ------------------------------- |
-| LLR 1 |    Opening and Setting STM32F4xx Discovery Board  |  Implemented  |
-| LLR 2 |    Simulating the Code in Qemu Software | Implemented |
+| LLR 1 |    Startup Code, Object Code, Linker Script and Executable Code  |  Implemented  |
+| LLR 2 |    controlling the Leds with Delay | Implemented |
