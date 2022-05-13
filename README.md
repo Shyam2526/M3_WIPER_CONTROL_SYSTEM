@@ -32,6 +32,8 @@
 | 2_Design | BLOCK_Dia.MD, Wiper_Flow.md |
 | 3_Implementation | inc, src, driver, debug, Makefile, startup, linker script, elf and Readme.md |
 | 4_TestCases | README.md |
+| 5_Report | FinalReport.md |
+| 6_Output | Video, Readme.md, images |
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Shyam2526)
@@ -45,19 +47,18 @@
 | APPLICATIONS | ANALYSIS | LINKS |
 |--------------|----------|---------------------|
 |Codacy | Static Code Analysis | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bfa8db013be648bdb5f1a6d37bf6970c)](https://www.codacy.com/gh/Shyam2526/M2_CAR_MONITORING/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Shyam2526/M2_CAR_MONITORING&amp;utm_campaign=Badge_Grade)|
-| Codiga | Static Code Analysis | [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-red.svg)](https://api.codiga.io/project/33070/status/svg)|
-| Codiga | CODE QUALITY SCORE | [![codiga](https://img.shields.io/badge/CODIGA_QUALITY_SCORE-100-skyblue.svg)](https://api.codiga.io/project/33070/score/svg) |
+| Codiga | Static Code Analysis | [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-red.svg)](https://api.codiga.io/project/33427/status/svg)|
+| Codiga | CODE QUALITY SCORE | [![Quality](https://api.codiga.io/project/33427/score/svg)](https://app.codiga.io/hub/user/github/Shyam2526)|
 
 ## Workflows
 
   | Type  | LINKS  |
   |-------|--------|
-  |cppcheck |  [![main_check](https://github.com/Shyam2526/M2_CAR_MONITORING/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Shyam2526/M2_CAR_MONITORING/actions/workflows/c-cpp.yml) |
+  |cppcheck |  [![C_CPP-check](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml) |
   | Build on WINDOWS | [![C windows BUILD](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/Windows%20Build.yml/badge.svg)](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/Windows%20Build.yml) |
-  | Valgrind | [![Valgrind](https://github.com/Shyam2526/M2_CAR_MONITORING/actions/workflows/valgrind.yml/badge.svg)](https://github.com/Shyam2526/M2_CAR_MONITORING/actions/workflows/valgrind.yml) |
+  | Valgrind | [![C_CPP-check](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Shyam2526/M3_WIPER_CONTROL_SYSTEM/actions/workflows/c-cpp.yml) |
   
 ## Support
 
 For support, shyamakumar4516@gmail.com or For any issue comment below my project in __GITHUB__.
-| 5_Report | FinalReport.md |
-| 6_Output | Video, Readme.md, images |
+
