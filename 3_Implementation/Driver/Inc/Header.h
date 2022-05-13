@@ -1,0 +1,10 @@
+GPIO_Handle_t Gpio;
+uint8_t key=1;
+void delay(uint32_t sec);
+void Led_Pin_Init(void);
+void Push_Button_Init(void);
+void wiper_led_On_Low(void);
+void wiper_led_On_Mid(void);
+void wiper_led_On_High(void);
+void car_starts(void);
+void wiper_led_Off(void);
