@@ -7,11 +7,11 @@
 ## Research
 * Referred projects, based on External Led Blinking using Switches.
 * Research about STM32F4 Discovery Board technical manual, References manual and STM32 Communities.
-## Structural Block Diagram
+## Block Diagram
 ![block](https://user-images.githubusercontent.com/101013448/168084494-01d61f39-8bca-4092-96c6-b7409e987de5.jpg)
 
-## Behavioural Block Diagram
-![Untitled Diagram (3)](https://user-images.githubusercontent.com/101013448/168089335-1ce41f5c-acf3-414c-b5c6-de151ea8c815.jpg)
+## Flow chart
+![Diagram](https://user-images.githubusercontent.com/101013448/168428740-d221d9f9-ba95-4f9c-93f2-d461c12d56a7.jpg)
 
 ## 4W's and 1-H
 ### WHAT
