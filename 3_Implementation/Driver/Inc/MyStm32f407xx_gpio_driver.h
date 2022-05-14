@@ -1,10 +1,20 @@
-/*
- * MyStm32f407xx_gpio_driver.h
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : SHYAMKUMAR
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
  *
- *  Created on: May 12, 2022
- *      Author: sivaprakash k
+ * Copyright (c) 2022 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
  */
-
 #ifndef INC_MYSTM32F407XX_GPIO_DRIVER_H_
 #define INC_MYSTM32F407XX_GPIO_DRIVER_H_
 
