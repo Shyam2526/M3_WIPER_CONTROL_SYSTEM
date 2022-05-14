@@ -1,4 +1,6 @@
-# ABSTRACT
+# M3_WIPER_CONTROL_SYSTEM
+
+## ABSTRACT
 ```bash
  In this project, A wiper speed control system for an automotive wiper controls and the operational speed of a wiper in
  accordance with rain conditions.The control system includes a sensor (30) detecting rain or water conditions to produce
