@@ -19,7 +19,7 @@
 ### WHY
 * To know the Wiper Control System principle and to vary the speeds depends on the user input.
 ### WHO
-* Peoples having the four wheelers can use it.
+* People having the four wheelers can use it.
 ### WHERE
 * This system used in car, lorry, trucks, etc to clean the spread of water in front glass.
 ### How
