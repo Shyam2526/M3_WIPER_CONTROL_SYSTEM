@@ -1,6 +1,23 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : SHYAMKUMAR
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2022 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
+
 #include "MyStm32f407xx.h"
 #include "Header.h"
-#include "MyStm32f407xx_gpio_driver.h"
 
 #define Hz	10000000
 
@@ -18,17 +35,19 @@ int main(void)
 	Led_Pin_Init();
 	Gpio.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_14;
 	Led_Pin_Init();
+	Push_Button_Init();
 	while(1)
 	{
-		Push_Button_Init();
+
 		//GPIO_WriteToOutputPin(GPIOA, GPIO_PIN_NO_0, DISABLE);
 		if((GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0))==ENABLE)
 		{
 		if(key==1)
 		{
-			delay(3);
-			delay(3);
-			delay(3);
+			delay(2);
+			delay(2);
+			delay(2);
+			delay(2);
 			car_starts();
 				key++;
 
@@ -66,20 +85,22 @@ int main(void)
 			}
 		}
 		else if(key==5){
-			delay(3);
-			delay(3);
-			delay(3);
 			wiper_led_Off();
 			key++;
 		}
-		else
-			car_Off();
+		else if(key==6){
+			//car_Off();
+			if(car_Off() == ENABLE){
+				delay(3);
+				key = 1;
+			}
+		}
 	}
 
 	}
 }
 
-void delay(uint32_t sec){
+void delay(int sec){
 	for(uint32_t i= 0; i < sec*Hz; i++);
 }
 
@@ -101,10 +122,18 @@ void delay(uint32_t sec){
  void car_starts(void)
  {
 	 GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_14);
+
 }
-void car_Off(void){
-	key=0;
+int car_Off(void){
+
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_14, DISABLE);
+	if((GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0))==ENABLE){
+		 		//break;
+		 		return 1;
+		 	}
+		 	else
+		 		return 0;
+
 }
 int wiper_led_On_Low(void){
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
@@ -123,27 +152,29 @@ int wiper_led_On_Low(void){
 		//break;
 		return 1 ;
 	}
-	return 0;
+	else
+		return 0;
  }
 int wiper_led_On_Mid(void)
  {
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_15);
-	delay(5);
+	delay(4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_15, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(5);
+	delay(4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_13);
-	delay(5);
+	delay(4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_13, DISABLE);
 	GPIO_ToggleOutputPin(GPIOD, GPIO_PIN_NO_12);
-	delay(5);
+	delay(4);
 	GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_NO_12, DISABLE);
 	if((GPIO_ReadFromInputPin(GPIOA, GPIO_PIN_NO_0))==ENABLE){
 		//break;
 		return 1;
 	}
-	return 0;
+	else
+		return 0;
  }
  int wiper_led_On_High(void)
  {
@@ -163,7 +194,8 @@ int wiper_led_On_Mid(void)
 		//break;
 		return 1;
 	}
-	return 0;
+	else
+		return 0;
 }
 int wiper_led_Off(void)
 {
