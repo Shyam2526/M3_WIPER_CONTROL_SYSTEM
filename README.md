@@ -9,7 +9,12 @@
     5) PUSH BUTTON PRESSED FOURTH - BLUE, GREEN AND ORANGE LED OFF.
     6) PUSH BUTTON PRESSED AND HELD AGAIN FOR TWO SECONDS - CAR IGNITION & RED LED OFF.
   ```
+  ## Block Diagram & Flow Chart
   
+  ![Diagram_Wiper](https://user-images.githubusercontent.com/101013448/168443402-a913fe80-37d9-42b5-99cf-75c9e6c60b46.jpg)
+  ##
+  ![Diagram](https://user-images.githubusercontent.com/101013448/168443390-d4b85a36-dc51-4014-a324-abfb24a56d5f.jpg)
+    
   ## Installation
 
 * Installing Software
