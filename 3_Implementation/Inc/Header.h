@@ -2,7 +2,7 @@
  ******************************************************************************
  * @file           : main.c
  * @author         : SHYAMKUMAR
- * @brief          : Main program body
+ * @brief          : Header program
  ******************************************************************************
  * @attention
  *
@@ -15,13 +15,13 @@
  *
  ******************************************************************************
  */
-GPIO_Handle_t Gpio;
-void delay(int sec);
-void Led_Pin_Init(void);
-void Push_Button_Init(void);
-int wiper_led_On_Low(void);
-int wiper_led_On_Mid(void);
-int wiper_led_On_High(void);
-void car_starts(void);
-int wiper_led_Off(void);
-int car_Off(void);
+GPIO_Handle_t Gpio;                                                   //Pointer for Structure
+void delay(int sec);                                                  //Delay Function
+void Led_Pin_Init(void);                                              //LED Configuration Function
+void Push_Button_Init(void);                                          //Push Button Initializing
+int wiper_led_On_Low(void);                                           //For Low Speed
+int wiper_led_On_Mid(void);                                           //For Medium Speed
+int wiper_led_On_High(void);                                          //For High Speed
+void car_starts(void);                                                //Ignition ON
+int wiper_led_Off(void);                                              //Turning OFF LED's
+int car_Off(void);                                                    //Ignition OFF
