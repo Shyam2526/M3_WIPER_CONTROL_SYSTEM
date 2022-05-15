@@ -16,10 +16,10 @@
  ******************************************************************************
  */
 
-#include "MyStm32f407xx.h"
-#include "Header.h"
+#include "MyStm32f407xx.h"									//Include Driver File
+#include "Header.h"										//Include Header File
 
-#define Hz	10000000
+#define Hz	10000000									// Defining Delay Frequency
 
 int dum, dum1, dum2;										// Variable Init
 uint8_t key=1;
